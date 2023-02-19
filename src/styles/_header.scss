@@ -1,0 +1,49 @@
+.header {
+    display: flex;    
+    height: 100%;
+    align-items: baseline;
+    background-color: $color-black;
+
+    height: 170px;
+    padding-top: 15px;
+
+
+    &-city {
+        margin-left: 90px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 4px 8px;
+        gap: 10px;
+
+        &__select {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 31px;
+
+
+            color: $color-white;
+        }
+    }
+
+    &-number {
+        color: $color-white;
+        margin-left: 20px;
+
+        font-weight: $font-w-500;
+        font-size: $font-14;
+    }
+
+    &-description {
+        color: $color-gray;
+
+        margin-left: 20px;
+
+        font-weight: $font-w-400;
+        font-size: $font-14;
+    }
+}
+
+option {
+    color: $color-black;
+}
