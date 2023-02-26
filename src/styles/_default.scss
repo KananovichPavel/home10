@@ -15,5 +15,14 @@ body {
 .container {
     max-width: 1280px;
     margin: 0 auto;
-   
+
+}
+
+.title { 
+    font-size: $font-32;
+    font-weight: $font-w-700;
+
+    color: $color-black;
+    text-align: left;
+    cursor: pointer;
 }
