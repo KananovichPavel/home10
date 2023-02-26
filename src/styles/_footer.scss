@@ -1,0 +1,32 @@
+.footer {
+    width: 100%;
+    background-size: 100%;
+    background-color: $color-black;
+
+    &-block {
+        display: flex;
+        height: 100%;  
+        justify-content: space-around;  
+        flex-wrap: wrap;   
+        background-color: $color-black;
+
+        padding: 15px 200px;
+
+        &__description {
+            color: $color-white;
+        }
+    }
+}
+li {
+    margin: 10px;
+    list-style-type: none;    
+}
+li a {
+    text-decoration: none;
+    color: $color-white;
+}
+a img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}

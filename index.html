@@ -14,35 +14,300 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="./src/styles/main.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
     <header class="header">
-        <div class="header-city">
-            <select name="city" id="city-select" class="header-city__select">
-                <option value="minsk">Минск</option>
-                <option value="brest">Брест</option>
-                <option value="gomel">Гомель</option>
-                <option value="mogilev">Могилёв</option>
-                <option value="vitebsk">Витебск</option>
-                <option value="grodno">Гродно</option>
-            </select>
+        <div class="header-block">
+            <div class="header-block__city">
+                <select name="city" id="city-select" class="header-block__city_select">
+                    <option value="minsk">Минск</option>
+                    <option value="brest">Брест</option>
+                    <option value="gomel">Гомель</option>
+                    <option value="mogilev">Могилёв</option>
+                    <option value="vitebsk">Витебск</option>
+                    <option value="grodno">Гродно</option>
+                </select>
+            </div>
+            <p class="header-block__number">+375 (29) 7072788</p>
+            <p class="header-block__number">+375 (33) 7072788</p>
+            <div class="header-block__description">
+                <a href="#" class="header-block__description_text">Фотомагазин</a>
+                <a href="#" class="header-block__description_text">Доставка и оплата</a>
+                <a href="#" class="header-block__description_text">Трейд-ин</a>
+            </div>
         </div>
-        <p class="header-number">+375 (29) 7072788</p>
-        <p class="header-number">+375 (33) 7072788</p>
-        <a href="#" class="header-description">Фотомагазин</a>
-        <a href="#" class="header-description">Доставка и оплата</a>
-        <a href="#" class="header-description">Трейд-ин</a>
+
+        <div class="header-block">
+            <div class="header-block__dropdown">
+                <button class="header-block__dropdown_dropbtn">&#9776 Категории</button>
+                <div class="header-block__dropdown_content">
+                    <a href="#">Фотоаппараты</a>
+                    <a href="#">Объективы</a>
+                    <a href="#">Вспышки</a>
+                    <a href="#">Фотостудия</a>
+                    <a href="#">Аксессуары</a>
+                    <a href="#">Все для печати</a>
+                    <a href="#">Гаджеты</a>
+                </div>
+            </div>
+
+            <h1 class="photomarket">Photomarket</h1>
+
+            <div class="search">
+                <form class="search-form">
+                    <input type="text" placeholder="Я ищу..." class="search-form__text">
+                    <button type="submit" class="search-form__btn">&#128270</button>
+                </form>
+            </div>
+
+            <div class="icon">
+                <a href="#"><img src="./src/img/icon/map pin.svg" alt="" /></a>
+                <p class="icon-description">Адрес</p>
+
+            </div>
+
+            <div class="icon">
+                <a href="#"><img src="./src/img/icon/user.svg" alt="" /></a>
+                <p class="icon-description">Войти</p>
+
+            </div>
+
+            <div class="icon">
+                <a href="#"><img src="./src/img/icon/shopping cart.svg" alt="" /></a>
+                <p class="icon-description">Корзина</p>
+            </div>
+        </div>
     </header>
 
     <main>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="products">
+                        <h2 class="title-slide">Шедевры в деталях вместе с Nikon</h2>
+                        <h2 class="title-slide__description">Представляем совершенно новую фотокамеру Z7ll</h2>
+                        <button class="slide-btn"><a href="#" class="more"> Узнать больше</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+
+
+
+        <section class="container section">
+            <h2 class="title">Хиты продаж</h2>
+            <div class="section-block">
+                <div class="section-block__product">
+                    <p><img src="./src/img/hit/1.jpg" alt="" class="section-block__product_image" /></p>
+                    <h2>4 240p <span class="price">5 400p</span></h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="section-block__product">
+                    <p><img src="./src/img/hit/2.jpg" alt="" class="section-block__product_image" /></p>
+                    <h2>4 240p <span class="price">5 400p</span></h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="section-block__product">
+                    <p><img src="./src/img/hit//3.jpg" alt="" class="section-block__product_image" /></p>
+                    <h2>6 740p <span class="price">7 400p</span></h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="section-block__product">
+                    <p><img src="./src/img/hit/4.jpg" alt="" class="section-block__product_image" /></p>
+                    <h2>45p</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="section-block__product">
+                    <p><img src="./src/img/hit/5.jpg" alt="" class="section-block__product_image" /></p>
+                    <h2>45p</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+
+            <div class="section-block">
+                <div class="section-block__product">
+                    <p><img src="./src/img/hit/6.jpg" alt="" class="section-block__product_image" /></p>
+                    <h2>2 440p </h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="section-block__product">
+                    <p><img src="./src/img/hit/7.jpg" alt="" class="section-block__product_image" /></p>
+                    <h2>3 540p <span class="price">4 200p</span></h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="section-block__product">
+                    <p><img src="./src/img/hit//8.jpg" alt="" class="section-block__product_image" /></p>
+                    <h2>890p</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="section-block__product">
+                    <p><img src="./src/img/hit/9.jpg" alt="" class="section-block__product_image" /></p>
+                    <h2>450p</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="section-block__product">
+                    <p><img src="./src/img/hit/10.jpg" alt="" class="section-block__product_image" /></p>
+                    <h2>5 000p</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <button class="seemore"><a href="#">Показать еще</a></button>
+            <br>
+
+        </section>
+        <div class="section-block">
+            <div class="section-block__product">
+                <p><img src="./src/img/Vector1.png" alt="" class="section-block__product_icon" /></p>
+            </div>
+
+            <div class="section-block__product">
+                <p><img src="./src/img/Vector2.png" alt="" class="section-block__product_icon" /></p>
+            </div>
+
+            <div class="section-block__product">
+                <p><img src="./src/img/Vector3.png" alt="" class="section-block__product_icon" /></p>
+            </div>
+
+            <div class="section-block__product">
+                <p><img src="./src/img/4.png" alt="" class="section-block__product_icon" /></p>
+            </div>
+
+            <div class="section-block__product">
+                <p><img src="./src/img/Vector5.png" alt="" class="section-block__product_icon" /></p>
+            </div>
+        </div>
+
+        <section class="container section">
+            <h2 class="title">Обзоры</h2>
+            <div class="section-block">
+                <div class="section-block__product">
+                    <p><img src="./src/img/view/1.jpg" alt="" /></p>
+                    <p class="section-block__product_description">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+
+                <div class="section-block__product">
+                    <p><img src="./src/img/view/2.jpg" alt="" /></p>
+                    <p class="section-block__product_description">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+
+                <div class="section-block__product">
+                    <p><img src="./src/img/view/3.jpg" alt="" /></p>
+                    <p class="section-block__product_description">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>                
+            </div>
+        </section>
+
+        <section class="container section">
+            <h2 class="title">Ищите нас в Инстаграмм</h2>
+            <div class="section-block">
+                <div class="section-block__product">
+                    <p><img src="./src/img/insta/1.png" alt="" /></p>                   
+                </div>
+
+                <div class="section-block__product">
+                    <p><img src="./src/img/insta/2.png" alt="" /></p>                   
+                </div>
+
+                <div class="section-block__product">
+                    <p><img src="./src/img/insta/3.png" alt="" /></p>                   
+                </div>    
+                
+                <div class="section-block__product">
+                    <p><img src="./src/img/insta/4.png" alt="" /></p>                   
+                </div>  
+
+                <div class="section-block__product">
+                    <p><img src="./src/img/insta/5.png" alt="" /></p>                   
+                </div>  
+            </div>
+        </section>
 
     </main>
 
-    <footer>
+    <footer class="footer">
+        <div class="footer-block">
+            <div class="footer-block__description">
+                <ul>
+                    <li><a href="#"> фотоаппараты </a></li>
+                    <li><a href="#"> объективы </a></li>
+                    <li><a href="#"> студийный свет </a></li>
+                    <li><a href="#"> аксессуары </a></li>
+                    <li><a href="#"> вспышки </a></li>
+                    <li><a href="#"> сумки </a></li>
+                    <li><a href="#"> печать </a></li>
+                    <li><a href="#"> гаджеты </a></li>
+                </ul>
+
+            </div>
+
+            <div>
+                <ul>
+                    <li><a href="#"> фотомагазин </a></li>
+                    <li><a href="#"> фотопрокат </a></li>
+                    <li><a href="#"> трейд-ин </a></li>
+                    <li><a href="#"> доставка </a></li>
+                    <li><a href="#"> как купить? </a></li>
+                    <li><a href="#"> способ оплаты </a></li>
+                    <li><a href="#"> гарантия и возврат </a></li>
+                    <li><a href="#"> сертификаты </a></li>
+                    <li><a href="#"> скидки </a></li>
+                </ul>
+
+            </div>
+
+            <div>
+                <ul>
+                    <li><a href="#"> о компании </a></li>
+                    <li><a href="#"> новости </a></li>
+                    <li><a href="#"> акции </a></li>
+                    <li><a href="#"> обзоры </a></li>
+                    <li><a href="#"> контакты </a></li>
+                    <li><a href="#"> вакансии </a></li>
+                    <li><a href="#"> партнеры </a></li>
+                    <li><a href="#"> отзывы </a></li>
+                    <li><a href="#"> карта сайта </a></li>
+                </ul>
+
+            </div>
+
+            <div>
+                <ul>
+                    <li><a href="#">контактная информация </a></li>
+                    <li><a href="#"> +375(29)1001010 </a></li>
+                    <li><a href="#"> г. Минск ул.Победителей д.3, пом.41 </a></li>
+                    <li><a href="#"> fotomagaz@gmail.com </a></li>
+                    <br>
+                    <br>
+                    <li><a href="#"> способы оплаты</a></li>
+                    <li><a href="#"> <img src="./src/img/icon/visa.svg" alt=""></a> <a href="#"><img src="./src/img/icon/master.svg" alt=""></a> <a href="#"><img src="./src/img/icon/belcard.svg" alt=""> </a></li>
+                    
+                </ul>
+            </div>
+        </div>
+
 
     </footer>
-
+    <script src=" https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+                        <script type="module" src="./src/js/swiper.js"></script>
 </body>
 
 </html>

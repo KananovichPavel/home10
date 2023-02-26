@@ -1,0 +1,71 @@
+.swiper {
+    width: 1280px;
+    height: 500px;
+    margin-top: 50px;
+    
+  }
+  
+  img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+  
+  .products {
+
+    background-image: url('../img/image\ slide.jpg') ;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+  }
+  .title-slide {
+    color: $color-white;
+    font-size: $font-32;
+    font-weight: $font-w-700;
+
+    padding:  50px 20px 0px 250px;
+  }
+  .title-slide__description {
+    color: $color-gray;
+    font-size: $font-28;
+    font-weight: $font-w-500;
+
+    padding:  0px 20px 20px 250px;  
+  }
+  .slide-btn {
+    margin-left: 250px;
+   
+    background: none;
+
+    border: 2px solid $color-yellow;
+    border-radius: 15px;
+
+   
+  }
+ .slide-btn a {
+    text-decoration: none;
+    color: $color-yellow;
+    font-size: $font-20;
+    
+  }
+
+  @media (orientation: portrait) and (min-width: 768px) {
+    .swiper{
+      width: 100%;
+    height: 300px;
+    }
+  }
+  @media (orientation: portrait) and (min-width: 480px) {
+    .swiper{
+      width: 100%;
+    height: 150px;
+    }
+  }
+  @media (orientation: portrait) and (max-width: 480px) {
+    .swiper{
+      width: 100%;
+    height: 80px;
+    }
+  }
+  
+ 
+  
